@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color:#3B2FF7; 
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    color: yellow;
+    font-size: 32px;
+}
+    
+.subtitulo{
+    color: yellow;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.tarjetas, .botones-ataques{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+input:checked + label{
+    background: #6E85B7 ;
+}
+
+.tarjeta-de-mokepon{
+    width: 290px;
+    height: 106px;
+    background: #ABC9FF;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+ .tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+input{
+   display: none;
+}
+
+#boton-mascota{
+    background: yellow;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 196px;
+    height: 41px;;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 35px;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color: transparent; ;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 75px;
+    font-size: 18px;
+}
+
+#mensajes{
+    width:280px;
+    background: #4DF47B;
+    padding:20px;
+    margin-top:20px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+#resultado{
+    text-align: center;
+}
+
+#boton-reiniciar{
+    border: 1px solid black;
+    color: black;
+    background: #76BA99;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px; 
+    font-family: 'Press Start 2P', cursive;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 20px;
+    text-align: center;
+    background: #4DF47B;
+    margin-top: 20px;
+    box-sizing: box;
+    border-radius: 20px;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ver-mapa button{
+    background: yellow;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 136px;
+    height: 41px;;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 560px){
+    .tarjetas, .botones-ataques{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px){
+    
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        
+    }
+}
